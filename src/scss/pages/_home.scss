@@ -1,0 +1,180 @@
+@use "../abstracts" as *;
+
+.products-section {
+    margin-top: 20px;
+    margin-bottom: 56px;
+    h2 {
+        font-size: 38px;
+        margin: 0 24px;
+        font-family: Samsung700;
+        text-align: center;
+    }
+    ul {
+        margin: 34px 0 20px 0;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        li {
+            font-size: 18px;
+            font-family: Samsung700;
+            cursor: pointer;
+            padding-bottom: 4px;
+            &:hover {
+                color: #555555;
+            }
+        }
+        li:first-child {
+            border-bottom: 2px solid black;
+        }
+    }
+    &__cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        .products-section__card {
+            position: relative;
+            padding: 36px 0 24px 0;
+            border-radius: 24px;
+            max-width: 448px;
+            height: 333px;
+            width: 100%;
+            background: #f4f4f4;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            &:hover {
+                img {
+                    transform: scale(1.03);
+                }
+                .products-section__card-desc {
+                    margin-top: -10px;
+                    opacity: 0;
+                }
+                .products-section__card-btn {
+                    bottom: 26px;
+                    opacity: 100%;
+                }
+            }
+            img {
+                max-width: 201.59px;
+                transition: .2s;
+            }
+            .products-section__card-title {
+                margin-top: 18px;
+                max-width: 298px;
+                font-size: 19px;
+                font-weight: 400;
+                font-family: Samsung700;
+                text-align: center;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                margin-bottom: 6px;
+            }
+            .products-section__card-desc {
+                text-align: center;
+                transition: .3s;
+                p {
+                    font-size: 15px;
+                    color: #2189FF;
+                    font-family: Samsung700;
+                    margin-bottom: 8px;
+                }
+                h5 {
+                    font-size: 14px;
+                }
+            }
+            .products-section__card-btn {
+                transition: .3s;
+                position: absolute;
+                bottom: 4px;
+                height: 40px;
+                background: black;
+                font-weight: 600;
+                font-size: 14px;
+                padding: 0 20px;
+                border-radius: 20px;
+                color: white;
+                opacity: 0;
+                cursor: pointer;
+                &:hover {
+                    background: #555555;
+                }
+            }
+            .products-section__card-skidka {
+                top: 0;
+                left: 0;
+                margin: 1.5rem;
+                position: absolute;
+                background: #2189FF;
+                font-size: 12px;
+                font-weight: 600;
+                padding: 2px 6px;
+                color: white;
+                border-radius: 10px;
+            }
+            .skidka-hidden {
+                display: none;
+            }
+        }
+    }
+}
+.banner {
+    margin-top: -20px;
+    padding: 46px 0;
+    h3 {
+        text-align: center;
+        font-size: 48px;
+        font-family: Samsung700;
+    }
+    ul {
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        li {
+            font-family: Samsung700;
+            cursor: pointer;
+            padding: 8px 16px;
+            font-size: 18px;
+            border-radius: 20px;
+            &:hover {
+                background: #0000004c;
+                // background: #6b7581;
+            }
+        }
+        li:nth-child(1) {
+            text-decoration: underline;
+        }
+    }
+    h2 {
+        text-align: center;
+        font-size: 48px;
+        margin-top: 475px;
+        font-family: Samsung700;
+        margin-bottom: 8px;
+    }
+    p {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        button {
+            padding: 10px 24px;
+            border-radius: 20px;
+            margin: 0 auto;
+            font-family: Samsung700;
+            height: 37px;
+            cursor: pointer;
+            &:hover {
+                opacity: 80%;
+            }
+        }
+    }
+}
